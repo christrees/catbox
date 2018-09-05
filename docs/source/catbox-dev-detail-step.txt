@@ -1,0 +1,30 @@
+Step-NN - NAME_OF_GOAL - catbox-checkpoint-NN_
+-------------------------------------------------------
+
+The NAME_OF_GOAL Step-NN intent is to blahblahblah.
+
+#. Create NAME_OF_GOAL for catbox-checkpoint-NN_
+
+    #. tbd  
+    #. tbd 
+
+#. Produce catbox-checkpoint-NN_ NAME_OF_GOAL ::
+
+    macci:catbox cat$ cd ~/bast23/catbox/docs
+    macci:docs cat$ vi source/catbox-dev-detail.rst (update doc)
+    macci:docs cat$ vi source/conf.py (Bump minor version to X.X.NN to match checkpoint-NN)
+    macci:docs cat$ make html 
+    macci:docs cat$ open build/html/index.html (verify docs)
+    macci:catbox cat$ cd ~/bast23/catbox
+    macci:catbox cat$ git add *
+    macci:catbox cat$ git commit -m "commit for catbox-checkpoint-NN - NAME_OF_GOAL"
+    macci:catbox cat$ git tag catbox-checkpoint-NN
+    macci:catbox cat$ git push
+    macci:catbox cat$ git push origin catbox-checkpoint-NN
+    
+#. Verify checkpoint catbox-checkpoint-NN_
+
+Resources
+#. catbox-checkpoint-NN_
+
+.. _catbox-checkpoint-NN: https://github.com/christrees/catbox
